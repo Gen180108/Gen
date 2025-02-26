@@ -1,0 +1,78 @@
+body {
+    font-family: 'Bubblegum Sans', cursive; /* Bubble Font */
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Initial Gradient */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    color: white; /* Text color contrast for better readability */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+.container:hover {
+    transform: scale(1.05); /* Scale up the container on hover */
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+h2 {
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: #FFF5E1;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+textarea:hover {
+    background-color: #FFE4B5; /* Change background color on hover */
+    transform: scale(1.05); /* Scale up the textarea on hover */
+}
+button {
+    background-color: #B4E4FE;
+    color: #333;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+button:hover {
+    background-color: #7ED6FA;
+    transform: scale(1.1); /* Scale up the button on hover */
+}
